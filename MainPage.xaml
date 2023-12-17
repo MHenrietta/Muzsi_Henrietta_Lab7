@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Muzsi_Henrietta_Lab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="puppy.jpeg"
+                SemanticProperties.Description="Cute puppy!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Buna, tuturor!"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="34"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Bine ati venit pe aplicatia mea"
+                SemanticProperties.HeadingLevel="Level3"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Apasa aici daca iti plac catelusii :)"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
